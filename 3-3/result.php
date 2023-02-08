@@ -2,9 +2,9 @@
 <?php
 $my_numbers = $_GET['my_numbers'];
 echo date ("Y/m/d", time()); 
-echo の運勢は;
+echo "の運勢"は;
 echo '<br>';
-echo 選ばれた数字は;
+echo "選ばれた数字は";
 $str = "$my_numbers";
 $array = str_split($str);
 $response = $array[ array_rand( $array ) ] ;

@@ -32,4 +32,3 @@ if($response === "0" ) {
     echo "大吉";
 }
 ?>
-</span>

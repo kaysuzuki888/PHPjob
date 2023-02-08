@@ -31,9 +31,4 @@ if($response === "0" ) {
 }elseif($response === "9" ) {
     echo "大吉";
 }
-<<<<<<< HEAD
 ?>
-=======
-?>
-</span>
->>>>>>> 882b60ed87ac634a993017925a4c81ee87fd9467

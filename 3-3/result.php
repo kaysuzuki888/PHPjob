@@ -2,33 +2,23 @@
 <?php
 $my_numbers = $_GET['my_numbers'];
 echo date ("Y/m/d", time()); 
-echo "の運勢"は;
+echo "の運勢は";
 echo '<br>';
 echo "選ばれた数字は";
 $str = "$my_numbers";
 $array = str_split($str);
-$response = $array[ array_rand( $array ) ] ;
-echo $response;
+$result = $array[ array_rand( $array ) ] ;
+echo $result;
 echo '<br>';
-if($response === "0" ) {
+if($result == 0 ){
     echo "凶";
-}elseif($response === "1" ) {
+}elseif($result >=1 and $result <=3){
     echo "小吉";
-}elseif($response === "2" ) {
-    echo "小吉";
-}elseif($response === "3" ) {
-    echo "小吉";
-}elseif($response === "4") {
+}elseif($result >=4 and $result <=6){
     echo "中吉";
-}elseif($response === "5") {
-    echo "中吉";
-}elseif($response === "6") {
-    echo "中吉";
-}elseif($response === "7" ) {
+}elseif($result >=7 and $result <=8){
     echo "吉";
-}elseif($response === "8" ) {
-    echo "吉";
-}elseif($response === "9" ) {
+}elseif($result == 9 ){
     echo "大吉";
 }
 ?>
